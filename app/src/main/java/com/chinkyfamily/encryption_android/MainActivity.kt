@@ -44,6 +44,11 @@ class MainActivity : AppCompatActivity()
     val advancedKeyAlias = MasterKeys.getOrCreate(advancedKeySpec)
 
     /**
+     * bioMetricPrompt for
+     * */
+    private lateinit var biometricPrompt : BiometricPrompt
+
+    /**
      * promptInfo for BioMetric
      * */
     private lateinit var promptInfo : BiometricPrompt.PromptInfo
