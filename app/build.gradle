@@ -54,4 +54,7 @@ dependencies {
 
     //Google Tink
     implementation 'com.google.crypto.tink:tink-android:1.6.1'
+
+    //BioMetric
+    implementation 'androidx.biometric:biometric:1.2.0-alpha04'
 }
