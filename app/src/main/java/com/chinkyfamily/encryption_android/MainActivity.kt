@@ -25,6 +25,7 @@ import javax.crypto.SecretKey
 
 /**
  * MainActivity
+ * Note - Code is working for default Biometric Settings.
  * */
 class MainActivity : AppCompatActivity()
 {
@@ -142,10 +143,14 @@ class MainActivity : AppCompatActivity()
                     }
                 }
             })
+
+        /*
         val cipher = getCipher()
         val secretKey = getSecretKey()
         cipher.init(Cipher.ENCRYPT_MODE , secretKey)
         biometricPrompt.authenticate(promptInfo , BiometricPrompt.CryptoObject(cipher))
+        */
+        biometricPrompt.authenticate(promptInfo)
     }
 
     fun generateSecretKey()
